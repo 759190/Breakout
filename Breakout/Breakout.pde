@@ -16,18 +16,18 @@ color blue=#3CA3E5;
 color green=#57F5D4;
 color yellow=#FDFFAD;
 
-PFont optimus;
+PFont optimus; //font
 
 
-//bricks
-PImage[] gif;
+
+PImage[] gif; //gif
 int frameNumber;
 int f;
 
 int [] x;
 int [] y;
-boolean[] alive;
-int brickd;
+boolean[] alive; //for bricks
+int brickd; 
 int n;
 int tempx,tempy;
 
@@ -36,8 +36,8 @@ Minim minim;
 AudioPlayer paddle,brick,wall,life,lose,win,song;
 
 boolean leftkey,rightkey; //true or false
-float ballx,bally,balld,ballr;
-float paddlex,paddley,paddled,paddler;
+float ballx,bally,balld,ballr; //ball variables
+float paddlex,paddley,paddled,paddler; //paddle variables
 float d;
 float vx,vy; //velocity
 int score,lives,timer;
@@ -53,7 +53,7 @@ void setup() { //==============================================================
  size(800,800);
  
  optimus=createFont("Optimus.otf",50);
- 
+ //bricks
  brickd=40;
   n=60;
  x=new int [n];
@@ -73,7 +73,7 @@ void setup() { //==============================================================
    }
    i=i+1;
  }
- 
+ //gif
  frameNumber=24;
  gif=new PImage[frameNumber];
  

@@ -1,6 +1,7 @@
 void game() {
   song.pause();
   background(0);
+  
   //ball
   fill(255);
   stroke(255);
@@ -94,7 +95,7 @@ void gameClicks() {
 
 
 void manageBrick(int i) {//================================================
- 
+ //brick colours
    if (y[i]==100) fill(dark);
    if (y[i]>150) fill(indigo);
    if (y[i]>200) fill(blue);
